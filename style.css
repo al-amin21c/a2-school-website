@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.rail {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+.sand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  /***shared style***/
+.flex-row{
+    display: flex;
+}
+.flex-column{
+
+}
+.orange {
+    color: #FEA301;
+}
+.blue {
+    color: #01ACFD;
+}
+.fade-blue {
+    color: #05D4DF;
+}
+.navy-blue{
+    color: #5D58EF;
+}
+
+/****Body***/
+body {
+    max-width: 1160px;
+    margin: auto 140px;
+}
+
+/****navbar style****/
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    align-items: center;
+    gap: 20px;
+}
+li {
+    list-style: none;
+}
+ul li a {
+    color: b;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.nav-center {
+    gap: 2rem;
+    margin-right: 25px;
+}
+.contact-button {
+    background-color: #FEA301;
+    border-radius: 12px;
+    padding: 10px 30px;
+}
+.phone-nav {
+    display: none;
+}
+
+
+@media screen and (max-width:576px) {
+    
+    body {
+        margin: 0;
+    }
+    .nav-container{
+        display: none;
+    }
+    .phone-nav {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 15px;
+        padding-bottom: 5px;
+        border-bottom: #FEA301 solid 2px;
+    }
+    
+    
+    .menu-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+
+}
