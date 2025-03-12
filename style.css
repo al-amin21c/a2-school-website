@@ -37,7 +37,7 @@
 /****Body***/
 body {
     max-width: 1160px;
-    margin: auto 140px;
+    margin: auto ;
 }
 
 /****navbar style****/
@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 41px;
 }
 .logo-container{
     align-items: center;
@@ -71,16 +72,204 @@ ul li a {
     background-color: #FEA301;
     border-radius: 12px;
     padding: 10px 30px;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 .phone-nav {
     display: none;
 }
 
+/****banner area****/
+.banner {
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.banner-title-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.banner-btn {
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+/**curriculum section start***/
+.curriculum {
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.curriculum-title{
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+.card-container {
+    display: flex;
+    gap: 28px;
+
+}
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    width: 360px;
+    text-align: center;
+    background: linear-gradient(rgb(237, 225, 252, 0.6), rgb(255, 255, 255));
+    border-radius: 18px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.curriculum-img {
+    padding-top: 40px;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card-description {
+    font-size: 1rem ;
+    font-weight: 400;
+    padding: 0 35px;
+}
+.read-more {
+    font-size: 1rem ;
+    font-weight: bold;
+}
+.nav-icon {
+    width: 10%;
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+}
+.nav-icon-png {
+    width: 50%;
+}
+/***stories****/
+.story-section {
+    background: url(assets/bg.png), linear-gradient(to bottom, #FFFFFF, rgba(254, 163, 1, 0.3));
+    margin-left: calc(-1 * (100vw - 1160px) / 2);
+    margin-right: calc(-1 * (100vw - 1160px) / 2);
+    padding-left: calc(-1 (100vw - 1160px) / 2);
+    padding-right: calc(-1 (100vw - 1160px) / 2);
+}
+.stories-container{
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.story-title {
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.stories-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+#box-1 {
+    grid-row: span 2;
+}
+.card-img {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.story-card {
+    border-radius: 18px;
+    background-color: white;
+}
+.month-box {
+    display: flex;
+    height: 40px;
+    width: 150px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3CD8E8;
+    align-items: center;
+    position: relative;
+    transform: translateX(45px) translateY(-35px);
+    border-radius: 40px;
+    
+}
+.month-box-s {
+    display: flex;
+    height: 35px;
+    width: 150px;
+    padding: 10px 10px;
+    color: white;
+    background-color: #FEA301;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateX(25px) translateY(-30px);
+    border-radius: 40px;
+}
+#big-month-box {
+    width: 170px;
+}
+.month {
+    font-size: 1rem;
+    font-weight: medium;
+}
+.story-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-right: 30px;
+    text-align: left;
+}
+.story-card-description {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: medium;
+    padding-left: 35px;
+    padding-right: 30px;
+    text-align: left;
+}
+.story-card-title-s {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-right: 30px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.view-more-btn {
+    color: white;
+    background-color: black;
+    padding: 10px 30 px;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+   margin: 50px auto;
+   border: none;
+}
 
 @media screen and (max-width:576px) {
     
     body {
-        margin: 0;
+        margin: 0 17px;
     }
     .nav-container{
         display: none;
@@ -95,11 +284,110 @@ ul li a {
         border-bottom: #FEA301 solid 2px;
     }
     
-    
     .menu-icon {
         height: 30px;
         width: 30px;
     }
+    /***phone approach banner****/
 
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .banner-title-description {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    /***curriculum*****/
+    .card-container {
+        margin: 0 15px;
+        flex-direction: column;
+    }
+    .card1, .card2, .card3 {
+        max-width: 360px;
+        max-height: 380px;
+    }
+    .curriculum-img {
+        padding-top: 20px;
+    }
+    .nav-icon {
+        display: none;
+    }
 
+    /***story***/
+
+    .story-section {
+        background: url(assets/bg.png), linear-gradient(to bottom, #FFFFFF, rgba(254, 163, 1, 0.3));
+        margin: auto;
+    }
+    .stories-container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .story-title {
+        font-size: 2.9rem;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .stories-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .story-card {
+        max-width: 260px;
+        max-height: 290px;
+        column-gap: 20px;
+        gap: 15px;
+    }
+    .card-img {
+        width: 100%;
+    }
+    #box-1 {
+        display: none;
+    }
+    .story-card-title-s {
+        font-size: 9px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+        margin-top: 0px;
+    }
+    .month-box-s {
+        display: flex;
+        height: 20px;
+        width: 90px;
+        padding: 10px 10px;
+        color: white;
+        background-color: #FEA301;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: translateX(25px) translateY(-30px);
+        border-radius: 40px;
+    }
+    #big-month-box {
+        width: 110px;
+    }
+    .month {
+        font-size: 9px;
+        font-weight: medium;
+    }
 }
